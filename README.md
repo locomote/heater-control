@@ -1,7 +1,7 @@
 # Heater control
 
 This enables control of specific fujitsu aircon units.
-Commands are sent via a [Iguanaworks IR Transceiver](http://www.iguanaworks.net/) IR 'Hybrid' unit with a 'Wired Emitter'.
+Commands are sent via a [Iguanaworks IR Transceiver](http://www.iguanaworks.net/) 'Hybrid' unit with a 'Wired Emitter'.
 The transmitter is connected to a linux box & scripted via Jenkins.
 If you need to place the transmitter some distance from the USB dongle,
 you can buy a headphone extension cable. We're using one that's 7 meters long without issue.
@@ -22,7 +22,7 @@ curl -X POST "http://127.0.0.1:2990/on?mode=cool&temp=23"
 curl -X POST "http://127.0.0.1:2990/off"
 ```
 
-There's also a systemd unit file on `other`
+There's also a systemd unit file in `other`
 
 ### What can it do?
 
@@ -92,4 +92,4 @@ It seems you can work around this problem:
 
 > Signals with consistently sized pulses can be compressed in our transmission buffer so if you replace all the pulse 469 lines and replace them with the more common pulse 490 then the signal fits.
 
-[Source](http://iguanaworks.net/projects/IguanaIR/ticket/276)
+[(source)](http://iguanaworks.net/projects/IguanaIR/ticket/276)

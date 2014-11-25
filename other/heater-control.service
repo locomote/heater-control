@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=loco
-Group=loco
+User=someuser
+Group=somegroup
 Environment="NODE_ENV=production"
 WorkingDirectory=/srv/app/heater
 ExecStart=/srv/app/heater/start
@@ -14,4 +14,3 @@ ExecStart=/srv/app/heater/start
 
 [Install]
 WantedBy=multi-user.target
-
