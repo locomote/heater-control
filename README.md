@@ -22,6 +22,7 @@ curl -X POST "http://127.0.0.1:2990/on?mode=cool&temp=23"
 curl -X POST "http://127.0.0.1:2990/off"
 ```
 
+There's also a systemd unit file on `other`
 
 ### What can it do?
 
@@ -71,7 +72,7 @@ pulse 490
 **Does it work?**
 
 ```
-igclient –get-version –get-id
+igclient --get-version --get-id
 ```
 
 When sending commands, it's best to debug by running the daemon interactively:
@@ -89,5 +90,6 @@ igclient --send=filename.txt
 Sometimes you'll get length errors.
 It seems you can work around this problem:
 
-> Signals with consistently sized pulses can be compressed in our transmission buffer so if you replace all the pulse 469 lines and replace them with the more common pulse 490 then the signal fits
-[source](http://iguanaworks.net/projects/IguanaIR/ticket/276)
+> Signals with consistently sized pulses can be compressed in our transmission buffer so if you replace all the pulse 469 lines and replace them with the more common pulse 490 then the signal fits.
+
+[Source](http://iguanaworks.net/projects/IguanaIR/ticket/276)
