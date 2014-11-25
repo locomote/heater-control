@@ -1,0 +1,17 @@
+[Unit]
+Description=Heater control server
+After=network.target
+
+[Service]
+Type=simple
+User=loco
+Group=loco
+Environment="NODE_ENV=production"
+WorkingDirectory=/srv/app/heater
+ExecStart=/srv/app/heater/start
+#ExecStop=/srv/app/heater/stop
+#ExecReload=/srv/app/heater/restart
+
+[Install]
+WantedBy=multi-user.target
+
