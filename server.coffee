@@ -42,29 +42,29 @@ sendCommand = (mode, temp, cb) ->
     cb()
 
 setupRoutes = ->
-  app.post "/off", (req, res, next) ->
-    sendCommand 'off', null, (err) ->
-      return next(err) if err
-
-      res.send 'ok'
-
-  app.post "/on", (req, res, next) ->
+  app.post "/", (req, res, next) ->
     mode = req.param('mode')
     temp = req.param('temp')
 
-    return res.status(400).send("Invalid mode") unless RANGES[mode]
-    return res.status(400).send("Invalid temp") unless temp
+    if mode is 'off'
+      sendCommand 'off', null, (err) ->
+        return next(err) if err
 
-    temp = parseInt(temp)
-    range = RANGES[mode]
+        res.send 'ok'
+    else
+      return res.status(400).send("Invalid mode") unless RANGES[mode]
+      return res.status(400).send("Invalid temp") unless temp
 
-    if temp > range.max or temp < range.min
-      return res.send(400, "Out of range; must be within: #{range.min} <= temp <= #{range.max}")
+      temp = parseInt(temp)
+      range = RANGES[mode]
 
-    sendCommand mode, temp, (err) ->
-      return next(err) if err
+      if temp > range.max or temp < range.min
+        return res.send(400, "Out of range; must be within: #{range.min} <= temp <= #{range.max}")
 
-      res.send 'ok'
+      sendCommand mode, temp, (err) ->
+        return next(err) if err
+
+        res.send 'ok'
 
 
 setupRoutes()
