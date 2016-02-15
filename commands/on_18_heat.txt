@@ -1,0 +1,305 @@
+space 110592
+pulse 2730
+pulse 597
+space 1557
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 1109
+pulse 490
+space 320
+pulse 490
+space 1130
+pulse 490
+space 298
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 1130
+pulse 490
+space 1109
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 1130
+pulse 490
+space 1152
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 298
+pulse 490
+space 320
+pulse 490
+space 298
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 448
+space 320
+pulse 490
+space 1130
+pulse 426
+space 341
+pulse 490
+space 320
+pulse 426
+space 320
+pulse 490
+space 298
+pulse 490
+space 320
+pulse 448
+space 320
+pulse 448
+space 320
+pulse 448
+space 1130
+pulse 490
+space 277
+pulse 448
+space 320
+pulse 448
+space 320
+pulse 448
+space 320
+pulse 426
+space 341
+pulse 448
+space 1130
+pulse 490
+space 1152
+pulse 490
+space 1109
+pulse 490
+space 1130
+pulse 490
+space 1152
+pulse 490
+space 1152
+pulse 426
+space 320
+pulse 490
+space 320
+pulse 490
+space 298
+pulse 490
+space 1130
+pulse 490
+space 320
+pulse 490
+space 298
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 1152
+pulse 426
+space 1173
+pulse 490
+space 320
+pulse 426
+space 320
+pulse 490
+space 1152
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 426
+space 341
+pulse 490
+space 320
+pulse 490
+space 1152
+pulse 405
+space 341
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 426
+space 341
+pulse 490
+space 1130
+pulse 448
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 448
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 320
+pulse 490
+space 341
+pulse 426
+space 320
+pulse 448
+space 320
+pulse 490
+space 320
+pulse 490
+space 341
+pulse 426
+space 320
+pulse 490
+space 298
+pulse 490
+space 341
+pulse 426
+space 341
+pulse 426
+space 320
+pulse 426
+space 320
+pulse 448
+space 320
+pulse 490
+space 341
+pulse 405
+space 320
+pulse 448
+space 320
+pulse 490
+space 341
+pulse 426
+space 341
+pulse 426
+space 320
+pulse 448
+space 341
+pulse 426
+space 341
+pulse 426
+space 320
+pulse 448
+space 341
+pulse 426
+space 341
+pulse 426
+space 1152
+pulse 448
+space 1173
+pulse 426
+space 341
+pulse 426
+space 1173
+pulse 405
+space 362
+pulse 426
+space 1173
+received 6 signal(s)
+pulse 426
+space 341
+pulse 405
+space 1194
+pulse 426
+space 43690
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917
+received 1 signal(s)
+space 152917

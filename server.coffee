@@ -1,17 +1,25 @@
-_          = require('lodash')
+path       = require('path')
 exec       = require('child_process').exec
 express    = require('express')
+glob       = require('glob')
 
-app     = express()
 
-RANGES =
-  heat:
-    min: 20, max: 24
-  cool:
-    min: 21, max: 24
+root         = path.normalize(__dirname)
+commandsPath = "#{root}/commands"
+app          = express()
+
+
+getTemps = (mode) ->
+  glob.sync("on_*_#{mode}.txt", cwd: commandsPath).map((f) -> f.match(/_(\d+)_/)[1])
+
+commands =
+  heat: getTemps('heat')
+  cool: getTemps('cool')
+
 
 start = ->
-  host = '127.0.0.1'
+  #host = '127.0.0.1'
+  host = '0.0.0.0'
   port = 2990
   server = app.listen port, host
 
@@ -29,7 +37,7 @@ sendCommand = (mode, temp, cb) ->
   else
     "on_#{temp}_#{mode}.txt"
 
-  command = "igclient --send=./commands/#{file}"
+  command = "igclient --send=#{commandsPath}/#{file}"
 
   console.log "executing: #{command}"
 
@@ -52,14 +60,11 @@ setupRoutes = ->
 
         res.send 'ok'
     else
-      return res.status(400).send("Invalid mode") unless RANGES[mode]
+      return res.status(400).send("Invalid mode") unless commands[mode]
       return res.status(400).send("Invalid temp") unless temp
 
-      temp = parseInt(temp)
-      range = RANGES[mode]
-
-      if temp > range.max or temp < range.min
-        return res.send(400, "Out of range; must be within: #{range.min} <= temp <= #{range.max}")
+      if temp not in commands[mode]
+        return res.status(400).send("temp must be in #{commands[mode]}")
 
       sendCommand mode, temp, (err) ->
         return next(err) if err
